@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+    <soapenv:Body>
+        <ns2:GetValidatePatientInfoRequest xmlns:ns2="http://www.rt-eu.ru/med/hc/">
+            <Session_ID>f3f0923a-7d6c-465e-82ab-7331f0ebcde6</Session_ID>
+            <Patient_Data>
+                <OMS_Number>6555310838000080</OMS_Number>
+                <OMS_Series></OMS_Series>
+                <SNILS></SNILS>
+                <First_Name>Григорий</First_Name>
+                <Last_Name>Хаус</Last_Name>
+                <Middle_Name>Александрович</Middle_Name>
+                <Birth_Date>1959-05-15</Birth_Date>
+                <Sex>M</Sex>
+            </Patient_Data>
+            <Applicant_Data>
+                <Last_Name>Фёдоров</Last_Name>
+                <First_Name>Фёдор</First_Name>
+                <Middle_Name>Акакиевич</Middle_Name>
+                <SNILS>000-000-000 03</SNILS>
+                <Mobile_Phone>+7(921)1111111</Mobile_Phone>
+                <Email>test-user@email.com</Email>
+            </Applicant_Data>
+            <Cod_Kladr_Fias>65000001000015000</Cod_Kladr_Fias>
+            <Address_Str>693000, обл. Сахалинская, г. Южно-Сахалинск, ул. Ленина, д. 100, кв. 101</Address_Str>
+            <Adr_Region>Сахалинская</Adr_Region>
+            <Adr_Area></Adr_Area>
+            <Adr_City>Южно-Сахалинск</Adr_City>
+            <Adr_City_Area></Adr_City_Area>
+            <Adr_Place></Adr_Place>
+            <Adr_Street>Ленина</Adr_Street>
+            <Adr_Additional_Area></Adr_Additional_Area>
+            <Adr_Additional_Street></Adr_Additional_Street>
+            <Adr_House>100</Adr_House>
+            <Adr_Housing></Adr_Housing>
+            <Adr_Structure></Adr_Structure>
+            <Adr_Apartment>101</Adr_Apartment>
+            <Adr_Post_Index>693003</Adr_Post_Index>
+            <Reason_Task>ТЕСТОВЫЙ ВЫЗОВ!!! НЕ ПЕРЕДАВАТЬ ВРАЧУ!!! МОЖНО ОТМЕНЯТЬ!!!!</Reason_Task>
+        </ns2:GetValidatePatientInfoRequest>
+    </soapenv:Body>
+</soapenv:Envelope>

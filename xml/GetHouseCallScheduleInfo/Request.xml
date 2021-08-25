@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<SOAP-ENV:Envelope xmlns:SOAP-ENV='http://schemas.xmlsoap.org/soap/envelope/' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:s='http://www.w3.org/2001/XMLSchema' xmlns:wsa='http://www.w3.org/2005/08/addressing'>
+    <SOAP-ENV:Header>
+        <wsa:MessageID>urn:uuid:8FE609E2-A814-11E9-B74F-0050568D2145</wsa:MessageID>
+    </SOAP-ENV:Header>
+    <SOAP-ENV:Body>
+        <GetHouseCallScheduleInfoRequest xmlns="http://www.rt-eu.ru/med/hc/">
+            <Session_ID xmlns="">f3f0923a-7d6c-465e-82ab-7331f0ebcde6</Session_ID>
+            <Resource_Id xmlns="">17157120147.237373065</Resource_Id>
+            <StartDateRange xmlns="">2021-08-10</StartDateRange>
+            <EndDateRange xmlns="">2021-08-24</EndDateRange>
+        </GetHouseCallScheduleInfoRequest>
+    </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>

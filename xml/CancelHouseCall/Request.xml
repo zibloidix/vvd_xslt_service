@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<SOAP-ENV:Envelope xmlns:SOAP-ENV='http://schemas.xmlsoap.org/soap/envelope/' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:s='http://www.w3.org/2001/XMLSchema' xmlns:wsa='http://www.w3.org/2005/08/addressing'>
+    <SOAP-ENV:Header>
+        <wsa:MessageID>urn:uuid:8FE609E2-A814-11E9-B74F-0050568D2145</wsa:MessageID>
+    </SOAP-ENV:Header>
+    <SOAP-ENV:Body>
+        <ns2:CancelHouseCallRequest xmlns:ns6="http://epgu.rtlabs.ru/equeue/ws/types/" xmlns:ns5="http://epgu.rtlabs.ru/equeue/ws/" xmlns:ns2="http://www.rt-eu.ru/med/hc/" xmlns:ns4="http://www.w3.org/2004/08/xop/include" xmlns:ns3="http://smev.gosuslugi.ru/rev120315">
+            <HC_Id_Rmis>2406516207</HC_Id_Rmis>
+        </ns2:CancelHouseCallRequest>
+    </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>

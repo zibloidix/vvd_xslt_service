@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
+    xmlns:hc="http://www.rt-eu.ru/med/hc/">
+    <soapenv:Header/>
+    <soapenv:Body>
+        <hc:CancelHouseCallResponse>
+            <HC_Id_Rmis>2406516207</HC_Id_Rmis>
+            <Status_Code>0</Status_Code>
+            <Comment></Comment>
+        </hc:CancelHouseCallResponse>
+    </soapenv:Body>
+</soapenv:Envelope>

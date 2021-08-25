@@ -1,0 +1,16 @@
+{
+  "name": "y",
+  "version": "1.0.0",
+  "description": "House Call Doctor. Work on XSLT",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Aleksey Lomov",
+  "license": "ISC",
+  "dependencies": {
+    "fastify": "^3.20.2",
+    "xpath.js": "^1.1.0",
+    "xslt-processor": "^0.11.5"
+  }
+}

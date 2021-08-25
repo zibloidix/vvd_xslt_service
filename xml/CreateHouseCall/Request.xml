@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<SOAP-ENV:Envelope xmlns:SOAP-ENV='http://schemas.xmlsoap.org/soap/envelope/' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:s='http://www.w3.org/2001/XMLSchema' xmlns:wsa='http://www.w3.org/2005/08/addressing'>
+    <SOAP-ENV:Header>
+        <wsa:MessageID>urn:uuid:C90A913E-A814-11E9-B74F-0050568D2145</wsa:MessageID>
+    </SOAP-ENV:Header>
+    <SOAP-ENV:Body>
+        <CreateHouseCallRequest xmlns="http://www.rt-eu.ru/med/hc/">
+            <Session_ID xmlns="">f3f0923a-7d6c-465e-82ab-7331f0ebcde6</Session_ID>
+            <Slot_Id xmlns="">688c00b8-af26-4200-8419-92f4a070ff2f</Slot_Id>
+        </CreateHouseCallRequest>
+    </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>
