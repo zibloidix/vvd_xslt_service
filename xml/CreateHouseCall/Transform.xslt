@@ -2,13 +2,18 @@
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="2.0" xml:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
     xmlns:hc="http://www.rt-eu.ru/med/hc/">
     <xsl:output version="1.0" encoding="UTF-8" standalone="yes" method="xml"/>
+    <xsl:template match="//Session_ID">
+        <Session_ID>
+            <xsl:value-of select="." />
+        </Session_ID>
+    </xsl:template>
     <xsl:template match="/">
         <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
             xmlns:hc="http://www.rt-eu.ru/med/hc/">
             <soapenv:Header/>
             <soapenv:Body>
                 <hc:CreateHouseCallResponse>
-                    <Session_ID>f3f0923a-7d6c-465e-82ab-7331f0ebcde6</Session_ID>
+                    <xsl:apply-templates select="//Session_ID"/>
                     <HC_Id_Rmis>2406516207</HC_Id_Rmis>
                     <Status_Code>0</Status_Code>
                     <Comment>ОК</Comment>

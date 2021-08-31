@@ -2,13 +2,18 @@
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="2.0" xml:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
     xmlns:hc="http://www.rt-eu.ru/med/hc/">
     <xsl:output version="1.0" encoding="UTF-8" standalone="yes" method="xml"/>
+    <xsl:template match="//Session_ID">
+        <Session_ID>
+            <xsl:value-of select="." />
+        </Session_ID>
+    </xsl:template>
     <xsl:template match="/">
         <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
             xmlns:hc="http://www.rt-eu.ru/med/hc/">
             <soapenv:Header/>
             <soapenv:Body>
                 <hc:GetValidatePatientInfoResponse>
-                    <Session_ID>f3f0923a-7d6c-465e-82ab-7331f0ebcde6</Session_ID>
+                    <xsl:apply-templates select="//Session_ID"/>
                     <Patient_Id>98727272</Patient_Id>
                     <MO_Id>131132133</MO_Id>
                     <MO_OID>1.2.643.5.1.13.13.12.2.65.6742.0.11096</MO_OID>
