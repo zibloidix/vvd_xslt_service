@@ -14,12 +14,24 @@
             <soapenv:Body>
                 <hc:CreateHouseCallResponse>
                     <xsl:apply-templates select="//Session_ID"/>
-                    <HC_Id_Rmis>2406516207</HC_Id_Rmis>
-                    <Status_Code>0</Status_Code>
-                    <Comment>ОК</Comment>
-                    <Slot_Id>688c00b8-af26-4200-8419-92f4a070ff2f</Slot_Id>
-                    <VisitTime>2021-08-24T10:00:00+11:00</VisitTime>
-                    <Duration>480</Duration>
+                    <xsl:choose>
+                        <xsl:when test="//Slot_Id = 'e0569a75-badf-4561-acd1-7a748272976d'">
+                            <HC_Id_Rmis>2406516207</HC_Id_Rmis>
+                            <Status_Code>0</Status_Code>
+                            <Comment>ОК</Comment>
+                            <Slot_Id>e0569a75-badf-4561-acd1-7a748272976d</Slot_Id>
+                            <VisitTime>2021-08-24T10:00:00+11:00</VisitTime>
+                            <Duration>480</Duration>
+                        </xsl:when>
+                        <xsl:when test="//Slot_Id = '85d7bf40-9086-46b9-9ec5-df0522d82ebc'">
+                            <HC_Id_Rmis/>
+                            <Status_Code>1</Status_Code>
+                            <Comment>Внутренняя ошибка системы</Comment>
+                            <Slot_Id>85d7bf40-9086-46b9-9ec5-df0522d82ebc</Slot_Id>
+                            <VisitTime>2021-08-24T12:00:00+11:00</VisitTime>
+                            <Duration>480</Duration>
+                        </xsl:when>
+                    </xsl:choose>
                 </hc:CreateHouseCallResponse>
             </soapenv:Body>
         </soapenv:Envelope>
