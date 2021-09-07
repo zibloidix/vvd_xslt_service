@@ -8,9 +8,23 @@
             <soapenv:Header/>
             <soapenv:Body>
                 <hc:CancelHouseCallResponse>
-                    <HC_Id_Rmis>2406516207</HC_Id_Rmis>
-                    <Status_Code>0</Status_Code>
-                    <Comment></Comment>
+                    <xsl:choose>
+                        <xsl:when test="//HC_Id_Rmis = '2406516207'">
+                            <HC_Id_Rmis>2406516207</HC_Id_Rmis>
+                            <Status_Code>0</Status_Code>
+                            <Comment></Comment>
+                        </xsl:when>
+                        <xsl:when test="//HC_Id_Rmis = '3589018462'">
+                            <HC_Id_Rmis>3589018462</HC_Id_Rmis>
+                            <Status_Code>1</Status_Code>
+                            <Comment>Внутренняя ошибка системы</Comment>
+                        </xsl:when>
+                        <xsl:when test="//HC_Id_Rmis = '8846293365'">
+                            <HC_Id_Rmis>8846293365</HC_Id_Rmis>
+                            <Status_Code>2</Status_Code>
+                            <Comment>Отказ в проведении операции</Comment>
+                        </xsl:when>
+                    </xsl:choose>
                 </hc:CancelHouseCallResponse>
             </soapenv:Body>
         </soapenv:Envelope>
